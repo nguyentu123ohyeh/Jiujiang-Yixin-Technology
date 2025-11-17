@@ -294,11 +294,12 @@ function setLanguage(lang) {
   if (messageInput) messageInput.placeholder = text.form_message;
 
   // Xử lý riêng cho các thẻ p dùng chung key (trong info-card)
-  document.querySelectorAll('.info-card [data-lang="footer_address"]').forEach(el => el.innerText = text.footer_address);
-  document.querySelectorAll('.info-card [data-lang="footer_email"]').forEach(el => el.innerText = text.footer_email);
-  document.querySelectorAll('.info-card [data-lang="footer_phone"]').forEach(el => el.innerText = text.footer_phone);
-  document.querySelectorAll('.info-card [data-lang="footer_holder"]').forEach(el => el.innerText = text.footer_holder);
-  document.querySelectorAll('.info-card [data-lang="footer_holder_address"]').forEach(el => el.innerText = text.footer_holder_address);
+// Xử lý riêng cho các thẻ p trong info-card (ĐÃ SỬA)
+// Chúng ta dùng innerHTML để hỗ trợ thẻ <br> trong contact_card4_p
+document.querySelectorAll('.info-card [data-lang="contact_card1_p"]').forEach(el => el.innerHTML = text.contact_card1_p);
+document.querySelectorAll('.info-card [data-lang="contact_card2_p"]').forEach(el => el.innerHTML = text.contact_card2_p);
+document.querySelectorAll('.info-card [data-lang="contact_card3_p"]').forEach(el => el.innerHTML = text.contact_card3_p);
+document.querySelectorAll('.info-card [data-lang="contact_card4_p"]').forEach(el => el.innerHTML = text.contact_card4_p);
 
   // Xử lý riêng cho Breadcrumb trang hiện tại
   document.querySelectorAll('.breadcrumbs li.current').forEach(el => {
@@ -310,7 +311,8 @@ function setLanguage(lang) {
 
   // ===================== KẾT THÚC CONTACT PAGE =======================
   // ===================================================================
-  // ===================== ABOUT PAGE (MỚI THÊM) =====================
+  // ===================================================================
+  // ===================== ABOUT PAGE (ĐÃ SỬA LỖI) ====================
   // ===================================================================
 
   document.querySelectorAll('title[data-lang="title_about"]').forEach(el => el.innerText = text.title_about);
@@ -326,7 +328,7 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-lang="mission_p1"]').forEach(el => el.innerText = text.mission_p1);
   document.querySelectorAll('[data-lang="mission_p2"]').forEach(el => el.innerText = text.mission_p2);
 
-  // Quick Facts Card
+  // Quick Facts Card (SỬA: Bổ sung các giá trị)
   document.querySelectorAll('[data-lang="quick_facts_title"]').forEach(el => el.innerText = text.quick_facts_title);
   document.querySelectorAll('[data-lang="label_company"]').forEach(el => el.innerText = text.label_company);
   document.querySelectorAll('[data-lang="label_location"]').forEach(el => el.innerText = text.label_location);
@@ -334,8 +336,16 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-lang="label_email"]').forEach(el => el.innerText = text.label_email);
   document.querySelectorAll('[data-lang="label_holder"]').forEach(el => el.innerText = text.label_holder);
   
-  // (Các giá trị trong Quick Facts Card và Office Info dùng chung key từ footer và site_name,
-  //  chúng đã được dịch ở các đoạn code khác nên không cần gọi lại ở đây)
+  // === BỔ SUNG PHẦN BỊ THIẾU ===
+  document.querySelectorAll('[data-lang="company_name"]').forEach(el => el.innerText = text.company_name);
+  document.querySelectorAll('[data-lang="company_location"]').forEach(el => el.innerText = text.company_location);
+  document.querySelectorAll('[data-lang="company_phone"]').forEach(el => el.innerText = text.company_phone);
+  document.querySelectorAll('[data-lang="company_email"]').forEach(el => {
+      el.href = 'mailto:' + text.company_email;
+      el.innerText = text.company_email;
+  });
+  document.querySelectorAll('[data-lang="company_holder"]').forEach(el => el.innerText = text.company_holder);
+  // === KẾT THÚC BỔ SUNG ===
 
   // Values Section
   document.querySelectorAll('[data-lang="values_title"]').forEach(el => el.innerText = text.values_title);
@@ -347,14 +357,24 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-lang="values_3_title"]').forEach(el => el.innerText = text.values_3_title);
   document.querySelectorAll('[data-lang="values_3_desc"]').forEach(el => el.innerText = text.values_3_desc);
   
-  // Office Info Section
+  // Office Info Section (SỬA: Bổ sung các giá trị)
   document.querySelectorAll('[data-lang="office_title"]').forEach(el => el.innerText = text.office_title);
   document.querySelectorAll('[data-lang="office_desc"]').forEach(el => el.innerText = text.office_desc);
   document.querySelectorAll('[data-lang="label_address"]').forEach(el => el.innerText = text.label_address);
   document.querySelectorAll('[data-lang="label_holder_address"]').forEach(el => el.innerText = text.label_holder_address);
 
+  // === BỔ SUNG PHẦN BỊ THIẾU ===
+  document.querySelectorAll('[data-lang="office_address"]').forEach(el => el.innerText = text.office_address);
+  document.querySelectorAll('[data-lang="office_phone"]').forEach(el => el.innerText = text.office_phone);
+  document.querySelectorAll('[data-lang="office_email"]').forEach(el => {
+      el.href = 'mailto:' + text.office_email;
+      el.innerText = text.office_email;
+  });
+  document.querySelectorAll('[data-lang="office_holder"]').forEach(el => el.innerText = text.office_holder);
+  document.querySelectorAll('[data-lang="office_holder_address"]').forEach(el => el.innerText = text.office_holder_address);
+  // === KẾT THÚC BỔ SUNG ===
+
   // ===================== KẾT THÚC ABOUT PAGE =======================
-  // ===================================================================
   // ===================== TERMS PAGE (MỚI THÊM) =====================
   // ===================================================================
 

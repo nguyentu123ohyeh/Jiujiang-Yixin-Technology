@@ -117,7 +117,7 @@ const LANG_CN = {
   footer_terms: "服务条款",
   footer_address: "广州市花都区新雅街道旧村华路60号501房",
   footer_phone_label: "电话:",
-  footer_phone: "(您的电话号码)", // (Chưa có)
+  footer_phone: "+86 138 5924 7103", // (Chưa có)
   footer_email_label: "邮箱:",
   footer_email: "info@yinxi.com", // (Email ví dụ)
   footer_holder_label: "法定代表人:",
@@ -151,7 +151,7 @@ const LANG_CN = {
   contact_card2_title: "电子邮件",
   contact_card2_p: "info@yinxi.com",
   contact_card3_title: "致电我们",
-  contact_card3_p: "(您的电话号码)",
+  contact_card3_p: "+86 138 5924 7103",
   contact_card4_title: "法定代表人",
   contact_card4_p: "黄学诚<br>广州市花都区新雅街道旧村华路60号501房",
   contact_social_title: "关注我们",
@@ -235,7 +235,7 @@ const LANG_CN = {
   label_location: "地点:",
   company_location: "广州市花都区新雅街道旧村华路60号501房",
   label_phone: "电话:",
-  company_phone: "(您的电话号码)", // (Chưa có)
+  company_phone: "+86 138 5924 7103", // (Chưa có)
   label_email: "电子邮件:",
   company_email: "info@yinxi.com", // (Email ví dụ)
   label_holder: "法定代表人:",
@@ -256,7 +256,7 @@ const LANG_CN = {
   office_desc: "如果您想了解更多关于我们材料的信息或讨论项目合作，请通过以下方式联系我们。",
   label_address: "地址:",
   office_address: "广州市花都区新雅街道旧村华路60号501房",
-  office_phone: "(您的电话号码)", // (Chưa có)
+  office_phone: "+86 138 5924 7103", // (Chưa có)
   office_email: "info@yinxi.com", // (Email ví dụ)
   office_holder: "黄学诚",
   label_holder_address: "注册地址:",
@@ -268,7 +268,7 @@ const LANG_CN = {
   label_location: "地点:",
   company_location: "广州市花都区新雅街道旧村华路60号501房",
   label_phone: "电话:",
-  company_phone: "(您的电话号码)", 
+  company_phone: "+86 138 5924 7103", 
   label_email: "电子邮件:",
   company_email: "info@yinxi.com", 
   label_holder: "法定代表人:",
@@ -279,7 +279,7 @@ const LANG_CN = {
   office_desc: "如果您想了解更多关于我们材料的信息或讨论项目合作，请通过以下方式联系我们。",
   label_address: "地址:",
   office_address: "广州市花都区新雅街道旧村华路60号501房",
-  office_phone: "(您的电话号码)", 
+  office_phone: "+86 138 5924 7103", 
   office_email: "info@yinxi.com", 
   office_holder: "黄学诚",
   label_holder_address: "注册地址:",
@@ -300,7 +300,7 @@ const LANG_CN = {
   contact_card2_p: "info@yinxi.com", // (Email ví dụ)
   
   contact_card3_title: "致电我们",
-  contact_card3_p: "(您的电话号码)", // (Chưa có)
+  contact_card3_p: "+86 138 5924 7103", // (Chưa có)
   
   contact_card4_title: "法定代表人",
   contact_card4_p: "黄学诚<br>广州市花都区新雅街道旧村华路60号501房",

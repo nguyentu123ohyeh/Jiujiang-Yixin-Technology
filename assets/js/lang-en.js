@@ -117,7 +117,7 @@ const LANG_EN = {
   footer_terms: "Terms & Conditions",
   footer_address: "Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
   footer_phone_label: "Phone:",
-  footer_phone: "(Your Phone Number)", // (Chưa có)
+  footer_phone: "+86 138 5924 7103", // (Chưa có)
   footer_email_label: "Email:",
   footer_email: "info@yinxi.com", // (Email ví dụ)
   footer_holder_label: "Legal Rep:", // Đổi 'Holder' thành 'Legal Rep'
@@ -151,7 +151,7 @@ const LANG_EN = {
   contact_card2_title: "Email Us",
   contact_card2_p: "info@yinxi.com",
   contact_card3_title: "Call Us",
-  contact_card3_p: "(Your Phone Number)",
+  contact_card3_p: "+86 138 5924 7103",
   contact_card4_title: "Legal Representative",
   contact_card4_p: "Huáng Xuéchéng (黄学诚)<br>Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
   contact_social_title: "Follow Us",
@@ -235,7 +235,7 @@ const LANG_EN = {
   label_location: "Location:",
   company_location: "Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
   label_phone: "Phone:",
-  company_phone: "(Your Phone Number)", // (Chưa có)
+  company_phone: "+86 138 5924 7103", // (Chưa có)
   label_email: "Email:",
   company_email: "info@yinxi.com", // (Email ví dụ)
   label_holder: "Legal Rep:",
@@ -256,7 +256,7 @@ const LANG_EN = {
   office_desc: "If you'd like to learn more about our materials or discuss a project collaboration, contact us using the details below.",
   label_address: "Address:",
   office_address: "Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
-  office_phone: "(Your Phone Number)", // (Chưa có)
+  office_phone: "+86 138 5924 7103", // (Chưa có)
   office_email: "info@yinxi.com", // (Email ví dụ)
   office_holder: "Huáng Xuéchéng (黄学诚)",
   label_holder_address: "Reg. Address:",
@@ -268,7 +268,7 @@ const LANG_EN = {
   label_location: "Location:",
   company_location: "Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
   label_phone: "Phone:",
-  company_phone: "(Your Phone Number)", 
+  company_phone: "+86 138 5924 7103", 
   label_email: "Email:",
   company_email: "info@yinxi.com", 
   label_holder: "Legal Rep:",
@@ -279,7 +279,7 @@ const LANG_EN = {
   office_desc: "If you'd like to learn more about our materials or discuss a project collaboration, contact us using the details below.",
   label_address: "Address:",
   office_address: "Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",
-  office_phone: "(Your Phone Number)", 
+  office_phone: "+86 138 5924 7103", 
   office_email: "info@yinxi.com", 
   office_holder: "Huáng Xuéchéng (黄学诚)",
   label_holder_address: "Reg. Address:",
@@ -300,7 +300,7 @@ const LANG_EN = {
   contact_card2_p: "info@yinxi.com", // (Email ví dụ)
   
   contact_card3_title: "Call Us",
-  contact_card3_p: "(Your Phone Number)", // (Chưa có)
+  contact_card3_p: "+86 138 5924 7103", // (Chưa có)
   
   contact_card4_title: "Legal Representative",
   contact_card4_p: "Huáng Xuéchéng (黄学诚)<br>Room 501, No. 60 Jicun Hua Rd, Xinya Street, Huadu, Guangzhou, China",

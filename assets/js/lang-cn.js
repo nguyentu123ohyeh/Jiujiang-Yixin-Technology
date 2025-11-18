@@ -67,17 +67,18 @@ const LANG_CN = {
   // ===== PRODUCTS SECTION (NỘI DUNG MỚI) =====
   products_title: "产品分类",
   products_desc: "探索我们的核心建筑用品和装饰材料。",
-  product1_title: "建筑金属及合金",
-  product1_desc: "包括铝、钢、不锈钢，用于门框、扶手、隔断及结构构件。",
+  product1_title: "涂料与涂装材料",
+  product1_desc: "室内外涂料、底漆、防水涂层以及各类必备涂装辅材。",
 
-  product2_title: "玻璃及透明/半透明材料",
-  product2_desc: "钢化玻璃、装饰玻璃、隔断玻璃和幕墙玻璃，适用于现代建筑。",
+  product2_title: "墙砖与地砖",
+  product2_desc: "陶瓷砖、瓷质砖、装饰墙砖及其他用于墙面和地面铺设的材料。",
 
-  product3_title: "装饰及表面材料",
-  product3_desc: "瓷砖、石材、铝墙板及装饰面板，用于表面装饰。",
+  product3_title: "门窗五金配件",
+  product3_desc: "涵盖全套门窗五金，如合页、门把手、锁具、密封条、防虫网及其他门窗配件。",
 
-  product4_title: "配件及安装材料",
-  product4_desc: "螺丝、铰链、胶粘剂、铝玻璃配件、门把手及密封条，用于正确安装。",
+  product4_title: "手动建筑工具",
+  product4_desc: "建筑施工常用手工具，如锤子、抹子、切割工具、测量工具、水平尺等基本设备。",
+
 
 
   // ===== HOW WE WORK SECTION (NỘI DUNG MỚI) =====

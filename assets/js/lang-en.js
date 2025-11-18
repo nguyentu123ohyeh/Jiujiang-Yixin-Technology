@@ -68,17 +68,18 @@ const LANG_EN = {
   // ===== PRODUCTS SECTION (NỘI DUNG MỚI) =====
   products_title: "Product Categories",
   products_desc: "Explore our core range of building supplies and finishing materials.",
-  product1_title: "Metals & Alloys",
-  product1_desc: "Including aluminum, steel, and stainless steel, used for door frames, railings, partitions, and structural elements.",
+  product1_title: "Paints & Painting Supplies",
+  product1_desc: "Interior and exterior paints, primers, waterproof coatings, and essential painting materials.",
 
-  product2_title: "Glass & Transparent Materials",
-  product2_desc: "Tempered glass, decorative glass, partitions, and curtain wall glass for modern construction.",
+  product2_title: "Wall & Floor Tiles",
+  product2_desc: "Ceramic tiles, porcelain tiles, decorative wall tiles, and other tiling materials for finishing.",
 
-  product3_title: "Cladding & Finishing Materials",
-  product3_desc: "Tiles, stone, aluminum wall panels, and decorative panels for surface finishing.",
+  product3_title: "Door & Window Hardware",
+  product3_desc: "Comprehensive hardware solutions including hinges, door handles, locks, gaskets, insect screens, and various accessories for doors and windows.",
 
-  product4_title: "Accessories & Installation Supplies",
-  product4_desc: "Screws, hinges, adhesives, aluminum-glass accessories, handles, and gaskets for proper installation.",
+  product4_title: "Handheld Construction Tools",
+  product4_desc: "Hand tools for construction such as hammers, trowels, cutters, measuring tools, levels, and other essential equipment.",
+
 
   // ===== HOW WE WORK SECTION (NỘI DUNG MỚI) =====
   how_title: "Our Supply Process",

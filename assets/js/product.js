@@ -1,854 +1,793 @@
 const PRODUCTS = [
   {
-    id: 1,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name: { 
-      en: "Car Phone Holder for MagSafe [78+LBS Suction & Strong Magnetic] – 360° Adjustable Car Mount for iPhone 12–17 Series, Carbon Fiber",
-      cn: "磁吸车载手机支架【78+磅强力吸附 & 超强磁吸】360°可调节车载支架，适用于 iPhone 12–17 系列，碳纤维款,"},
-    img: "assets/img/Phone/1.jpg",
+    id: 25,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Eco-Friendly Exterior Waterproof Coating",
+      cn: "环保型外墙防水涂料"
+    },
+    desc: {
+      en: "A high-performance, eco-friendly exterior waterproof coating. Provides excellent protection against rain and moisture, ensuring durability for building facades.",
+      cn: "一种高性能、环保的外墙防水涂料。提供卓越的防雨防潮保护，确建筑物外立面的耐用性。"
+    },
+    img: "assets/img/Paint/1.png",
     imgs: [
-      "assets/img/Phone/1.jpg",
-      "assets/img/Phone/1.1.jpg",
-      "assets/img/Phone/1.2.jpg",
-      "assets/img/Phone/1.3.jpg",
-      "assets/img/Phone/1.4.jpg",
-    ],
-    desc:{
-      en: "This MagSafe car phone holder features an ultra-strong 78+ lbs suction base and enhanced magnetic force for a secure hold even on rough roads. The 360° adjustable design allows flexible viewing angles, while the carbon-fiber finish adds a premium look. Compatible with iPhone 12–17 series and MagSafe-enabled cases.",
-      cn: "这款磁吸车载手机支架配备超强78+磅吸附底座和增强磁力，即使在颠簸的道路上也能牢固固定。360°可调节设计允许灵活的观看角度，而碳纤维外观增添了高级感。兼容iPhone 12–17系列及支持MagSafe的手机壳。"},
+      "assets/img/Paint/1.png",
+      "assets/img/Paint/1.1.png",
+      "assets/img/Paint/1.2.png",
+      "assets/img/Paint/1.3.png"
+    ]
+  },
+  {
+    id: 26,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Epoxy Floor Coating (Waterproof & Anti-Slip)",
+      cn: "环氧地坪漆（防水防滑）"
+    },
+    desc: {
+      en: "A durable epoxy floor paint offering waterproof, dustproof, and anti-slip properties. Ideal for garages, warehouses, and basketball courts.",
+      cn: "一种耐用的环氧地坪漆，具有防水、防尘和防滑性能。非常适合车库、仓库和篮球场。"
+    },
+    img: "assets/img/Paint/2.png",
+    imgs: [
+      "assets/img/Paint/2.png",
+      "assets/img/Paint/2.1.png",
+      "assets/img/Paint/2.2.png",
+      "assets/img/Paint/2.3.png"
+    ]
+  },
+  {
+    id: 28,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Jinling Polyurethane Waterproof Paint",
+      cn: "金陵聚氨酯防水涂料"
+    },
+    desc: {
+      en: "A premium polyurethane (PU) waterproof coating designed for swimming pools and wet areas. Offers superior water resistance and long-lasting protection.",
+      cn: "专为游泳池和潮湿区域设计的优质聚氨酯 (PU) 防水涂料。提供卓越的防水性能和持久保护。"
+    },
+    img: "assets/img/Paint/3.png",
+    imgs: [
+      "assets/img/Paint/3.png",
+      "assets/img/Paint/3.1.png",
+      "assets/img/Paint/3.2.png",
+      "assets/img/Paint/3.3.png"
+    ]
+  },
+  {
+    id: 29,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Eco-Friendly Acrylic Latex Wall Paint",
+      cn: "环保丙烯酸乳胶墙面漆"
+    },
+    desc: {
+      en: "High-quality, water-based acrylic latex paint for interior and exterior walls. Suitable for residential and commercial use, offering a smooth, durable finish.",
+      cn: "适用于内外墙的高品质水性丙烯酸乳胶漆。适用于住宅和商业用途，提供光滑、耐用的表面。"
+    },
+    img: "assets/img/Paint/4.png",
+    imgs: [
+      "assets/img/Paint/4.png",
+      "assets/img/Paint/4.1.png",
+      "assets/img/Paint/4.2.png",
+      "assets/img/Paint/4.3.png"
+    ]
+  },
+  {
+    id: 30,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Instant-Fix Wall Repair Spray (300ml)",
+      cn: "即时修复墙面修补喷雾 (300ml)"
+    },
+    desc: {
+      en: "A convenient 300ml wall repair spray for quick touch-ups. Waterproof and easy to use, perfect for covering stains, cracks, and graffiti on white walls.",
+      cn: "一款方便的 300ml 墙面修补喷雾，用于快速修补。防水且易于使用，非常适合覆盖白墙上的污渍、裂缝和涂鸦。"
+    },
+    img: "assets/img/Paint/5.png",
+    imgs: [
+      "assets/img/Paint/5.png",
+      "assets/img/Paint/5.1.png",
+      "assets/img/Paint/5.2.png",
+      "assets/img/Paint/5.3.png"
+    ]
+  },
+  {
+    id: 31,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "High Gloss 1K Automotive Refinishing Paint",
+      cn: "高光 1K 汽车修补漆"
+    },
+    desc: {
+      en: "A high-gloss 1K automotive coating spray for refinishing. Provides a professional, durable finish for car body repairs and touch-ups.",
+      cn: "用于修补的高光 1K 汽车涂料喷雾。为车身维修和修补提供专业、耐用的表面效果。"
+    },
+    img: "assets/img/Paint/6.png",
+    imgs: [
+      "assets/img/Paint/6.png",
+      "assets/img/Paint/6.1.png",
+      "assets/img/Paint/6.2.png",
+      "assets/img/Paint/6.3.png"
+    ]
+  },
+  {
+    id: 32,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Sanvo Premium Graffiti Spray Paint Set",
+      cn: "Sanvo 高级涂鸦喷漆套装"
+    },
+    desc: {
+      en: "Artist-grade spray paint with vibrant colors. Weatherproof and designed for street art, murals, and graffiti projects on various surfaces.",
+      cn: "具有鲜艳色彩的艺术家级喷漆。防风雨设计，适用于各种表面上的街头艺术、壁画和涂鸦项目。"
+    },
+    img: "assets/img/Paint/7.png",
+    imgs: [
+      "assets/img/Paint/7.png",
+      "assets/img/Paint/7.1.png",
+      "assets/img/Paint/7.2.png",
+      "assets/img/Paint/7.3.png"
+    ]
+  },
+  {
+    id: 33,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Interior Acrylic Emulsion Wall Paint",
+      cn: "内墙丙烯酸乳胶漆"
+    },
+    desc: {
+      en: "A versatile interior emulsion paint. This acrylic latex wall coating offers excellent coverage, washability, and color retention for home interiors.",
+      cn: "一种多用途内墙乳胶漆。这种丙烯酸乳胶墙面涂料为家庭室内提供出色的覆盖力、耐洗性和保色性。"
+    },
+    img: "assets/img/Paint/8.png",
+    imgs: [
+      "assets/img/Paint/8.png",
+      "assets/img/Paint/8.1.png",
+      "assets/img/Paint/8.2.png",
+      "assets/img/Paint/8.3.png"
+    ]
+  },
+  {
+    id: 34,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Acrylic Polymer Emulsion for Paint",
+      cn: "涂料用丙烯酸聚合物乳液"
+    },
+    desc: {
+      en: "A high-quality acrylic polymer emulsion designed as a raw material for manufacturing superior paints. Enhances durability and adhesion.",
+      cn: "一种专为制造优质涂料而设计的高品质丙烯酸聚合物乳液原料。增强耐用性和附着力。"
+    },
+    img: "assets/img/Paint/9.png",
+    imgs: [
+      "assets/img/Paint/9.png",
+      "assets/img/Paint/9.1.png",
+      "assets/img/Paint/9.2.png",
+      "assets/img/Paint/9.3.png"
+    ]
+  },
+  {
+    id: 35,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Nbs-135 Red Rubber Waterproof Coating",
+      cn: "Nbs-135 红橡胶防水涂料"
+    },
+    desc: {
+      en: "A specialized red rubber waterproof coating for roofs, metal surfaces, and walls. Provides a flexible, watertight seal against harsh weather.",
+      cn: "一种专用于屋顶、金属表面和墙壁的红橡胶防水涂料。提供灵活的水密密封，抵御恶劣天气。"
+    },
+    img: "assets/img/Paint/10.png",
+    imgs: [
+      "assets/img/Paint/10.png",
+      "assets/img/Paint/10.1.png",
+      "assets/img/Paint/10.2.png",
+      "assets/img/Paint/10.3.png"
+    ]
+  },
+  {
+    id: 36,
+    category: { en: "Paint", cn: "涂料" },
+    name: {
+      en: "Wear-Resistant Acrylic Polyurethane Paint",
+      cn: "耐磨丙烯酸聚氨酯漆"
+    },
+    desc: {
+      en: "A customized high wear-resistant paint for indoor and outdoor use. This acrylic polyurethane coating is ideal for high-traffic areas requiring durability.",
+      cn: "一种适用于室内外的定制高耐磨涂料。这种丙烯酸聚氨酯涂层非常适合需要耐用性的高流量区域。"
+    },
+    img: "assets/img/Paint/11.png",
+    imgs: [
+      "assets/img/Paint/11.png",
+      "assets/img/Paint/11.1.png"
+    ]
+  },
+{
+    id: 37,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Vinyl Wood Plank Peel and Stick Floor Tile (Deep Gray)",
+      cn: "自粘乙烯基木纹地板砖（深灰色）"
+    },
+    desc: {
+      en: "A 36-pack of peel-and-stick vinyl floor tiles (54 sq.ft total) in Deep Gray. Features a rigid core, waterproof surface, and easy DIY installation. Ideal for modern interiors.",
+      cn: "一套36片装的自粘乙烯基地板砖（共54平方英尺），深灰色。具有刚性芯材、防水表面和易于DIY安装的特点。非常适合现代室内装饰。"
+    },
+    img: "assets/img/Tiles/1.jpg",
+    imgs: [
+      "assets/img/Tiles/1.jpg",
+      "assets/img/Tiles/1.1.jpg",
+      "assets/img/Tiles/1.2.jpg",
+      "assets/img/Tiles/1.3.jpg"
+    ]
+  },
+  {
+    id: 38,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Marble Pattern Peel and Stick Backsplash Panels (10pcs)",
+      cn: "大理石纹自粘后挡板墙板（10片装）"
+    },
+    desc: {
+      en: "A set of 10 waterproof PVC foam wall panels with a marble design (11.8\" x 11.8\"). Easy peel-and-stick application for kitchen backsplashes, bathrooms, and living rooms.",
+      cn: "一套10片装的防水PVC泡沫墙板，采用大理石设计（11.8英寸 x 11.8英寸）。易于剥离和粘贴，适用于厨房后挡板、浴室和客厅。"
+    },
+    img: "assets/img/Tiles/2.jpg",
+    imgs: [
+      "assets/img/Tiles/2.jpg",
+      "assets/img/Tiles/2.1.jpg",
+      "assets/img/Tiles/2.2.jpg",
+      "assets/img/Tiles/2.3.jpg"
+    ]
+  },
+  {
+    id: 39,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "White Marble Vinyl Floor/Wall Tiles 12''x24'' (5 Pcs)",
+      cn: "白色大理石纹乙烯基墙地砖 12''x24''（5片装）"
+    },
+    desc: {
+      en: "5 pieces of 12\"x24\" self-adhesive vinyl tiles with a white marble look. Waterproof and versatile, suitable for bathroom floors, kitchen walls, and RV interiors.",
+      cn: "5片 12英寸x24英寸 自粘乙烯基瓷砖，具有白色大理石外观。防水且用途广泛，适用于浴室地板、厨房墙壁和房车内饰。"
+    },
+    img: "assets/img/Tiles/3.jpg",
+    imgs: [
+      "assets/img/Tiles/3.jpg",
+      "assets/img/Tiles/3.1.jpg",
+      "assets/img/Tiles/3.2.jpg",
+      "assets/img/Tiles/3.3.jpg"
+    ]
+  },
+  {
+    id: 40,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Rosewood Vinyl Plank Peel and Stick Flooring (36-Pack)",
+      cn: "红木纹乙烯基自粘地板（36片装）"
+    },
+    desc: {
+      en: "36-pack (54 sq.ft) of vinyl plank flooring with a classic Rosewood finish. Waterproof and adhesive, perfect for upgrading bedrooms, living rooms, kitchens, and RVs.",
+      cn: "36片装（54平方英尺）乙烯基木地板，采用经典的红木饰面。防水且带背胶，非常适合升级卧室、客厅、厨房和房车。"
+    },
+    img: "assets/img/Tiles/4.jpg",
+    imgs: [
+      "assets/img/Tiles/4.jpg",
+      "assets/img/Tiles/4.1.jpg",
+      "assets/img/Tiles/4.2.jpg",
+      "assets/img/Tiles/4.3.jpg"
+    ]
+  },
+  {
+    id: 41,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Grey Ash Vinyl Plank Flooring Tiles (36-Pack)",
+      cn: "灰烬色乙烯基木地板砖（36片装）"
+    },
+    desc: {
+      en: "A 36-pack of luxury vinyl flooring tiles in Grey Ash wood look. Covers 54 sq.ft. Self-adhesive and easy to install in kitchens, bedrooms, and bathrooms.",
+      cn: "36片装豪华乙烯基地板砖，采用灰烬色木纹外观。覆盖54平方英尺。自粘式设计，易于在厨房、卧室和浴室安装。"
+    },
+    img: "assets/img/Tiles/5.jpg",
+    imgs: [
+      "assets/img/Tiles/5.jpg",
+      "assets/img/Tiles/5.1.jpg",
+      "assets/img/Tiles/5.2.jpg",
+      "assets/img/Tiles/5.3.jpg"
+    ]
+  },
+  {
+    id: 42,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Carrara Marble Peel and Stick Floor Tile 12''x24'' (5 Tiles)",
+      cn: "卡拉拉大理石纹自粘地砖 12''x24''（5片装）"
+    },
+    desc: {
+      en: "Set of 5 Carrara marble style vinyl tiles (12\"x24\"). Waterproof and removable, these peel-and-stick tiles add elegance to bathroom floors, kitchens, and bedrooms.",
+      cn: "5片卡拉拉大理石风格乙烯基瓷砖（12英寸x24英寸）。防水且可移除，这些自粘瓷砖为浴室地板、厨房和卧室增添优雅气息。"
+    },
+    img: "assets/img/Tiles/6.jpg",
+    imgs: [
+      "assets/img/Tiles/6.jpg",
+      "assets/img/Tiles/6.1.jpg",
+      "assets/img/Tiles/6.2.jpg",
+      "assets/img/Tiles/6.3.jpg"
+    ]
+  },
+  {
+    id: 43,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Aqua Teal Blue Mosaic Pebble Tiles (5 Sheets)",
+      cn: "水鸭蓝马赛克鹅卵石瓷砖（5张）"
+    },
+    desc: {
+      en: "5 sheets of aqua teal blue mosaic pebble tiles. Ideal for creating stunning accent walls, backsplashes, and bathroom shower floors.",
+      cn: "5张水鸭蓝马赛克鹅卵石瓷砖。非常适合打造令人惊叹的装饰墙、后挡板和浴室淋浴地板。"
+    },
+    img: "assets/img/Tiles/7.jpg",
+    imgs: [
+      "assets/img/Tiles/7.jpg",
+      "assets/img/Tiles/7.1.jpg",
+      "assets/img/Tiles/7.2.jpg",
+      "assets/img/Tiles/7.3.jpg"
+    ]
+  },
+  {
+    id: 44,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Blue Stone Patterned Vinyl Tile 9''x9'' (16 Sheets)",
+      cn: "蓝石花纹乙烯基瓷砖 9''x9''（16张）"
+    },
+    desc: {
+      en: "16 sheets of 9\"x9\" composite vinyl tiles featuring a blue stone patterned flower design. Groutable and self-adhesive, perfect for kitchen and bathroom backsplashes.",
+      cn: "16张 9英寸x9英寸 复合乙烯基瓷砖，采用蓝石花纹设计。可填缝且带背胶，非常适合厨房和浴室后挡板。"
+    },
+    img: "assets/img/Tiles/8.jpg",
+    imgs: [
+      "assets/img/Tiles/8.jpg",
+      "assets/img/Tiles/8.1.jpg",
+      "assets/img/Tiles/8.2.jpg",
+      "assets/img/Tiles/8.3.jpg"
+    ]
+  },
+  {
+    id: 45,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Sefrou Green 3D Adhesive Tile Backsplash (5 Sheets)",
+      cn: "Sefrou 绿色 3D 自粘瓷砖后挡板（5张）"
+    },
+    desc: {
+      en: "5 sheets of 11.43\" x 9\" 3D peel-and-stick tiles in Sefrou Green. These adhesive tiles create a vibrant backsplash for kitchens and bathrooms.",
+      cn: "5张 11.43英寸 x 9英寸 的 Sefrou 绿色 3D 自粘瓷砖。这些粘性瓷砖为厨房和浴室营造出充满活力的后挡板。"
+    },
+    img: "assets/img/Tiles/9.jpg",
+    imgs: [
+      "assets/img/Tiles/9.jpg",
+      "assets/img/Tiles/9.1.jpg",
+      "assets/img/Tiles/9.2.jpg",
+      "assets/img/Tiles/9.3.jpg"
+    ]
+  },
+  {
+    id: 46,
+    category: { en: "Wall & Floor Tiles", cn: "墙地砖" },
+    name: {
+      en: "Sage Green Vinyl Floor/Wall Sticker 12''x6'' (12Pcs)",
+      cn: "鼠尾草绿乙烯基墙地贴纸 12''x6''（12件套）"
+    },
+    desc: {
+      en: "A set of 12 non-slip, self-adhesive PVC tile decals in Sage Green (12\"x6\"). Perfect for DIY floor and wall upgrades in kitchens and bathrooms.",
+      cn: "一套12件的防滑自粘 PVC 瓷砖贴纸，鼠尾草绿色（12英寸x6英寸）。非常适合厨房和浴室的 DIY 地面和墙面升级。"
+    },
+    img: "assets/img/Tiles/10.jpg",
+    imgs: [
+      "assets/img/Tiles/10.jpg",
+      "assets/img/Tiles/10.1.jpg",
+      "assets/img/Tiles/10.2.jpg",
+      "assets/img/Tiles/10.3.jpg"
+    ]
+  },
+  {
+    id: 1,
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "RYOBI 10MM (3/8'') HAND DRILL, 500W, D-110VR",
+      cn: "RYOBI 10毫米 (3/8英寸) 手电钻, 500W, D-110VR"
+    },
+    desc: {
+      en: "A compact 500W hand drill from RYOBI, featuring a 10mm (3/8'') chuck and variable speed. The D-110VR is ideal for general-purpose drilling in wood and light metal.",
+      cn: "RYOBI 出品的一款紧凑型 500W 手电钻，配备 10 毫米 (3/8英寸) 夹头和变速功能。D-110VR 型号非常适合在木材和轻金属上进行通用钻孔作业。"
+    },
+    img: "assets/img/Handheld/1.jpg",
+    imgs: [
+      "assets/img/Handheld/1.jpg",
+    ]
   },
   {
     id: 2,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
     name: {
-      en: "3 in 2 USB C Cable for Apple Watch Charger/iPhone 17 Charger/Lightning,Multi Charging Cable Cord,Vacation Camping Essentials,Portable Designed for iWatch &iPhone 16-12-4FT",
-      cn: "3合2 USB C 充电线，适用于 Apple Watch 充电器/iPhone 17 充电器/Lightning，多功能充电线，旅行露营必备，便携设计，适用于 iWatch & iPhone 16-12-4FT"},
-    img: "assets/img/Phone/2.jpg",
+      en: "INGCO IMPACT DRILL 13MM 810W V SPEED F/R ID8108",
+      cn: "INGCO 冲击钻 13毫米 810W 变速正反转 ID8108"
+    },
+    desc: {
+      en: "This 810W INGCO impact drill features a durable 13mm chuck, variable speed (V Speed), and forward/reverse (F/R) function. Model ID8108 is perfect for masonry, wood, and metal drilling.",
+      cn: "这款 810W INGCO 冲击钻具有耐用的 13 毫米夹头、变速功能 (V Speed) 和正反转 (F/R) 功能。ID8108 型号非常适合在砖石、木材和金属上钻孔。"
+    },
+    img: "assets/img/Handheld/2.jpg",
     imgs: [
-      "assets/img/Phone/2.jpg",
-      "assets/img/Phone/2.1.jpg",
-      "assets/img/Phone/2.2.jpg",
-      "assets/img/Phone/2.3.jpg",
-      "assets/img/Phone/2.4.jpg",
-    ],
-    desc:{
-      en: "A versatile 3-in-2 USB-C charging cable designed for Apple Watch and iPhone. It combines Lightning, USB-C, and Watch charger interfaces into one compact cord—perfect for travel, camping, or daily convenience. Durable, tangle-free, and optimized for fast charging.",
-      cn: "这是一款多功能的3合2 USB-C充电线，专为Apple Watch和iPhone设计。它将Lightning、USB-C和Watch充电接口结合在一根紧凑的线缆中——非常适合旅行、露营或日常使用。耐用、防缠绕，并优化了快速充电性能。"},
+      "assets/img/Handheld/2.jpg",
+      "assets/img/Handheld/2.1.jpg",
+      "assets/img/Handheld/2.2.jpg",
+    ]
   },
   {
     id: 3,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "Professional Wireless Microphone for iPhone, iPad, Android, Lavalier Microphone for Video Recording - iPhone Mic Crystal Clear Recording with USB-C for Content Creators",
-      cn: "专业无线麦克风，适用于 iPhone、iPad、Android，领夹式麦克风，适用于视频录制 - 适用于内容创作者的 USB-C iPhone 麦克风，提供清晰录音"},
-    img: "assets/img/Phone/3.jpg",
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "INGCO IMPACT DRILL 13MM 680W ID6808",
+      cn: "INGCO 冲击钻 13毫米 680W ID6808"
+    },
+    desc: {
+      en: "A reliable 680W impact drill from INGCO with a 13mm keyless chuck. Model ID6808 offers a great balance of power and control for various drilling tasks, including concrete and wood.",
+      cn: "INGCO 出品的一款可靠的 680W 冲击钻，配有 13 毫米无钥匙夹头。ID6808 型号在动力和控制之间取得了良好平衡，适用于包括混凝土和木材在内的各种钻孔任务。"
+    },
+    img: "assets/img/Handheld/3.jpg",
     imgs: [
-      "assets/img/Phone/3.jpg",
-      "assets/img/Phone/3.1.jpg",
-      "assets/img/Phone/3.2.jpg",
-      "assets/img/Phone/3.3.jpg",
-      "assets/img/Phone/3.4.jpg",
-    ],
-    desc:
-    {en: "A wireless lavalier microphone designed for creators who need clear, stable audio for videos, interviews, and livestreams. It features real-time noise reduction, long transmission range, and dual compatibility with Lightning and USB-C devices.",
-    cn: "这是一款无线领夹式麦克风，专为需要清晰、稳定音频的视频创作者、采访和直播而设计。它具有实时降噪、长传输范围，并兼容Lightning和USB-C设备。"},
+      "assets/img/Handheld/3.jpg",
+      "assets/img/Handheld/3.1.jpg",
+      "assets/img/Handheld/3.2.jpg",
+      "assets/img/Handheld/3.3.jpg",
+    ]
   },
   {
     id: 4,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "3-in-1 Adjustable Phone Lanyard Crossbody Cell Phone Neck Strap Universal Mobile Wrist Lanyard",
-      cn: "3合1可调节手机挂绳，斜挎手机颈带，通用手机手腕挂绳"},
-    img: "assets/img/Phone/4.jpg",
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "STANLEY 10MM (3/8'') ROTARY DRILL, 550W, STDR5510",
+      cn: "STANLEY 10毫米 (3/8英寸) 旋转钻, 550W, STDR5510"
+    },
+    desc: {
+      en: "The STANLEY STDR5510 is a 550W rotary drill with a 10mm (3/8'') chuck. Lightweight and compact, it's designed for efficient drilling and driving in wood and steel.",
+      cn: "STANLEY STDR5510 是一款 550W 旋转钻，配有 10 毫米 (3/8英寸) 夹头。它轻巧紧凑，专为在木材和钢材上高效钻孔和旋拧而设计。"
+    },
+    img: "assets/img/Handheld/4.jpg",
     imgs: [
-      "assets/img/Phone/4.jpg",
-      "assets/img/Phone/4.1.jpg",
-      "assets/img/Phone/4.2.jpg",
-      "assets/img/Phone/4.3.jpg",
-      "assets/img/Phone/4.4.jpg",
-    ],
-    desc:{
-      en: "A 3-in-1 adjustable phone lanyard that functions as a crossbody strap, neck strap, or wrist strap. Designed for hands-free convenience and universal compatibility, featuring strong connectors and soft, comfortable nylon material.",
-      cn: "这是一款3合1可调节手机挂绳，可作为斜挎带、颈带或手腕带使用。设计注重免提便利性和通用兼容性，配备坚固的连接器和柔软舒适的尼龙材质。"},
+      "assets/img/Handheld/4.jpg",
+      "assets/img/Handheld/4.1.jpg",
+      "assets/img/Handheld/4.2.jpg",
+      "assets/img/Handheld/4.3.jpg",
+    ]
   },
   {
     id: 5,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "Retractable Car Charger, White Elephant Gifts for Men Women, 69W Cars Adapter USB C Fast Charger, Car Accessories for Women Men, Gifts for Dad Mom, for iPhone 17 Pro Max Air 16 15 14 13 12 Plus",
-      cn: "可伸缩车载充电器，男女白象礼物，69W车载适配器USB C快速充电器，男女车载配件，送给爸爸妈妈的礼物，适用于iPhone 17 Pro Max Air 16 15 14 13 12 Plus"},
-    img: "assets/img/Phone/5.jpg",
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "INGCO 42V BL 7-1/4'' CIRCULAR SAW 1X2.0AH & 2 BLADES CSLI4218511",
+      cn: "INGCO 42V 无刷 7-1/4英寸 圆锯 (含1x2.0Ah电池和2锯片) CSLI4218511"
+    },
+    desc: {
+      en: "INGCO 42V brushless (BL) 7-1/4'' circular saw kit. This cordless tool provides powerful cutting performance. Comes with one 2.0Ah battery and two blades (CSLI4218511).",
+      cn: "INGCO 42V 无刷 (BL) 7-1/4英寸圆锯套装。这款无绳工具提供强大的切割性能。配有一块 2.0Ah 电池和两片锯片 (CSLI4218511)。"
+    },
+    img: "assets/img/Handheld/5.jpg",
     imgs: [
-      "assets/img/Phone/5.jpg",
-      "assets/img/Phone/5.1.jpg",
-      "assets/img/Phone/5.2.jpg",
-      "assets/img/Phone/5.3.jpg",
-      "assets/img/Phone/5.4.jpg",
-    ],
-    desc:{
-      en: "This retractable 69W car charger provides fast and efficient charging for multiple iPhone models. The pull-out cable design prevents tangling and keeps your car interior clean. Durable, compact, and equipped with USB-C fast charging, it's a perfect everyday accessory for both short and long drives.",
-      cn: "这款可伸缩69W车载充电器为多款iPhone型号提供快速高效的充电。拉出式线缆设计防止缠绕，保持车内整洁。耐用、紧凑，配备USB-C快速充电，是短途和长途驾驶的理想日常配件。"},
+      "assets/img/Handheld/5.jpg",
+      "assets/img/Handheld/5.1.jpg",
+      "assets/img/Handheld/5.2.jpg",
+      "assets/img/Handheld/5.3.jpg",
+    ]
   },
   {
     id: 6,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "Silicone Double-Sided Suction Cup Phone Case Detachable Mount, Sticky Phone Grip with Higher Suction Power for iPhone, Hands-Free Phone Accessories Holder for Selfies and Videos, Light Pink",
-      cn: "硅胶双面吸盘手机壳可拆卸支架，适用于iPhone的高吸力粘性手机握把，免提手机配件支架，适合自拍和视频，浅粉色"},
-    img: "assets/img/Phone/6.jpg",
-    imgs: [
-      "assets/img/Phone/6.jpg",
-      "assets/img/Phone/6.1.jpg",
-      "assets/img/Phone/6.2.jpg",
-      "assets/img/Phone/6.3.jpg",
-      "assets/img/Phone/6.4.jpg",
-    ],
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "HIKOKI 185MM (7-1/4'') 36V LI-ION BRUSHLESS CIRCULAR SAW C3607DA MULTI VOLT",
+      cn: "HIKOKI 185毫米 (7-1/4英寸) 36V 锂电无刷圆锯 C3607DA MULTI VOLT"
+    },
     desc: {
-    en: "A double-sided silicone suction phone case designed for hands-free use. The high-suction pads securely attach to smooth surfaces, allowing easy selfies, videos, makeup tutorials, or desk viewing. Soft, durable, and detachable for flexible use.",
-    cn: "这是一款双面硅胶吸盘手机壳，专为免提使用而设计。高吸力垫牢固贴合光滑表面，方便自拍、视频录制、化妆教程或桌面观看。柔软耐用，可拆卸，使用灵活。" }
+      en: "The HIKOKI C3607DA is a 36V Multi Volt brushless circular saw. It features a 185mm (7-1/4'') blade for deep, fast, and cordless cuts, offering power comparable to corded models.",
+      cn: "HIKOKI C3607DA 是一款 36V Multi Volt 多电压无刷圆锯。它配备 185 毫米（7-1/4英寸）锯片，可进行深度、快速的无绳切割，功率可与有线型号相媲美。"
+    },
+    img: "assets/img/Handheld/6.jpg",
+    imgs: [
+      "assets/img/Handheld/6.jpg",
+    ]
   },
   {
     id: 7,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "Silicone Suction Cup Phone Case Mount Double Sided, Hands-Free Silicon Phone Grip with Higher Suction Power for Selfies and Videos, Non Slip Phone Accessories",
-      cn: "硅胶吸盘手机壳支架双面设计，免提硅胶手机握把，适用于自拍和视频录制，高吸力防滑手机配件"},
-    img: "assets/img/Phone/7.jpg",
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "STANLEY 20V 2X2.0AH BRUSHLESS DRILL DRIVER SBD710D2K-B1",
+      cn: "STANLEY 20V 2x2.0AH 无刷电钻 SBD710D2K-B1"
+    },
+    desc: {
+      en: "A STANLEY 20V brushless drill driver kit (SBD710D2K-B1). This powerful and compact tool is ideal for demanding driving and drilling tasks. Comes with two 2.0Ah batteries.",
+      cn: "STANLEY 20V 无刷电钻套装 (SBD710D2K-B1)。这款工具功能强大且结构紧凑，是高要求旋拧和钻孔任务的理想选择。配有两块 2.0Ah 电池。"
+    },
+    img: "assets/img/Handheld/7.jpg",
     imgs: [
-      "assets/img/Phone/7.jpg",
-      "assets/img/Phone/7.1.jpg",
-      "assets/img/Phone/7.2.jpg",
-      "assets/img/Phone/7.3.jpg",
-      "assets/img/Phone/7.4.jpg",
-    ],
-    desc:{
-      en: "This double-sided silicone suction mount provides a strong, slip-resistant grip for smartphones. Ideal for hands-free selfies, video calls, live streaming, and stable recording. Lightweight, reusable, and compatible with most phone models.",
-      cn: "这款双面硅胶吸盘支架为智能手机提供强力防滑握把。非常适合免提自拍、视频通话、直播和稳定录制。轻便、可重复使用，兼容大多数手机型号。"},
+      "assets/img/Handheld/7.jpg",
+      "assets/img/Handheld/7.1.jpg",
+      "assets/img/Handheld/7.2.jpg",
+    ]
   },
   {
     id: 8,
-    category: { en: "Phone Accessories", cn: "手机配件" },
-    name:{
-      en: "Wireless Charger, 15W Fast Qi Certified Wireless Charging Station with Sleep-Friendly Adaptive Light Compatible with iPhone 17 16 15 14 13 12 Pro Max Samsung Galaxy S25 S24 S23 Note 20 Google etc",
-      cn: "无线充电器，15W快速Qi认证无线充电站，配备适合睡眠的自适应灯光，兼容iPhone 17 16 15 14 13 12 Pro Max Samsung Galaxy S25 S24 S23 Note 20 Google等"},
-    img: "assets/img/Phone/8.jpg",
-    imgs: [
-      "assets/img/Phone/8.jpg",
-      "assets/img/Phone/8.1.jpg",
-      "assets/img/Phone/8.2.jpg",
-      "assets/img/Phone/8.3.jpg",
-      "assets/img/Phone/8.4.jpg",
-    ],
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
+    name: {
+      en: "MAKITA 12V 2X2.0AH LI-ION 10MM (3/8'') DRIVER DRILL, DF333DSAE",
+      cn: "MAKITA 12V 2x2.0AH 锂电 10毫米 (3/8英寸) 电钻, DF333DSAE"
+    },
     desc: {
-      en: "A 15W fast wireless charging pad compatible with iPhone, Samsung Galaxy, Google Pixel, and other Qi-enabled devices. Features smart temperature control, a sleep-friendly indicator light, and a slim, modern design perfect for desks, nightstands, or offices.",
-      cn: "这是一款15W快速无线充电板，兼容iPhone、Samsung Galaxy、Google Pixel及其他支持Qi的设备。具有智能温控、适合睡眠的指示灯以及纤薄现代的设计，非常适合放置在办公桌、床头柜或办公室。"}
+      en: "The MAKITA DF333DSAE is a 12V CXT Li-Ion driver drill. It's lightweight with a 10mm (3/8'') chuck, offering precision and control for fastening and drilling in tight spaces. Includes two 2.0Ah batteries.",
+      cn: "MAKITA DF333DSAE 是一款 12V CXT 锂电电钻。它重量轻，配有 10 毫米（3/8英寸）夹头，可在狭窄空间内提供精确的紧固和钻孔控制。包含两块 2.0Ah 电池。"
+    },
+    img: "assets/img/Handheld/8.jpg",
+    imgs: [
+      "assets/img/Handheld/8.jpg",
+      "assets/img/Handheld/8.1.jpg",
+    ]
   },
   {
     id: 9,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
     name: {
-      en: "Translucent Phone Grip with Expanding Kickstand, PopSockets for Phone, Adhesive Grip, Translucent PopGrip - Clear Glitter Silver",
-      cn: "半透明手机握把，带可扩展支架，适用于手机的PopSockets，粘性握把，半透明PopGrip - 透明闪光银"},
-    img: "assets/img/Phone/9.jpg",
-    imgs: [
-      "assets/img/Phone/9.jpg",
-      "assets/img/Phone/9.1.jpg",
-      "assets/img/Phone/9.2.jpg",
-      "assets/img/Phone/9.3.jpg",
-      "assets/img/Phone/9.4.jpg",
-    ],
+      en: "INGCO 8V 17PCS LI-ION CORDLESS DRIVER 6NM CSDLI08025",
+      cn: "INGCO 8V 17件套锂电螺丝刀 6NM CSDLI08025"
+    },
     desc: {
-      en: "A translucent expanding phone grip with a built-in kickstand for secure holding and convenient hands-free viewing. Designed with a glitter-silver finish for a stylish look. Fits most smartphones and cases with strong adhesive backing.",
-      cn: "这是一款半透明的可扩展手机握把，内置支架，提供稳固的握持和便捷的免提观看体验。采用闪光银色设计，外观时尚。适用于大多数智能手机和手机壳，配备强力粘性背面。"}
+      en: "An INGCO 8V Li-Ion cordless driver kit (CSDLI08025). This 6Nm screwdriver is perfect for furniture assembly and light-duty tasks. Comes with a 17-piece accessory set.",
+      cn: "INGCO 8V 锂电螺丝刀套装 (CSDLI08025)。这款 6Nm 扭矩的螺丝刀非常适合家具组装和轻型任务。附带 17 件配件套装。"
+    },
+    img: "assets/img/Handheld/9.jpg",
+    imgs: [
+      "assets/img/Handheld/9.jpg",
+      "assets/img/Handheld/9.1.jpg",
+      "assets/img/Handheld/9.2.jpg",
+    ]
   },
   {
     id: 10,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
     name: {
-      en: "Phone Grip with Expanding Kickstand, Adhesive Grip, Cute PopSockets - Purple Fields",
-      cn: "带可扩展支架的手机握把，粘性握把，可爱PopSockets - 紫色田野"},
-    img: "assets/img/Phone/10.jpg",
-    imgs: [
-      "assets/img/Phone/10.jpg",
-      "assets/img/Phone/10.1.jpg",
-      "assets/img/Phone/10.2.jpg",
-      "assets/img/Phone/10.3.jpg",
-      "assets/img/Phone/10.4.jpg",
-    ],
+      en: "DEWALT 20V BL ULTRA COMPACT HAMMER DRILL, 2X3.0AH DCD709L2-B1",
+      cn: "DEWALT 20V 无刷超紧凑冲击钻 (含2x3.0AH电池) DCD709L2-B1"
+    },
     desc: {
-      en: "A stylish phone grip featuring a foldable kickstand for comfortable viewing and secure handling. The Purple Fields design adds personality while offering strong adhesion and smooth expansion. Compatible with most phone models.",
-      cn: "这是一款时尚的手机握把，配备可折叠支架，提供舒适的观看体验和稳固的握持。紫色田野设计增添个性，同时提供强力粘附和顺畅扩展。兼容大多数手机型号。"}
+      en: "The DEWALT DCD709L2-B1 is a 20V MAX brushless, ultra-compact hammer drill. Its lightweight design gets into tight spaces, while the hammer function handles masonry. Includes two 3.0Ah batteries.",
+      cn: "DEWALT DCD709L2-B1 是一款 20V MAX 无刷超紧凑型冲击钻。其轻巧的设计可进入狭窄空间，冲击功能可处理砖石作业。包含两块 3.0Ah 电池。"
+    },
+    img: "assets/img/Handheld/10.jpg",
+    imgs: [
+      "assets/img/Handheld/10.jpg",
+      "assets/img/Handheld/10.1.jpg",
+      "assets/img/Handheld/10.2.jpg",
+    ]
   },
   {
     id: 11,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
     name: {
-      en: "MagSafe Magnetic Leather Wallet for iPhone (Light Pink)",
-      cn: "适用于 iPhone 的 MagSafe 磁吸皮革卡包（浅粉色）"
+      en: "INGCO 12V LI-ION DRILL 20NM W/1X12V BATT CDLI12456",
+      cn: "INGCO 12V 锂电电钻 20NM (含1x12V电池) CDLI12456"
     },
     desc: {
-      en: "A slim magnetic MagSafe leather wallet with strong attachment and RFID protection. Designed to snap securely onto iPhone 12–15 series cases, keeping cards organized and easily accessible.",
-      cn: "这款纤薄的 MagSafe 磁吸皮革卡包具有强力吸附和 RFID 防护，可稳固贴合 iPhone 12–15 系列手机壳，让您的卡片随时整齐收纳、轻松取用。"
+      en: "A compact 12V Li-Ion drill driver from INGCO (CDLI12456). With 20Nm of torque, it's a versatile tool for screwing and drilling. Kit includes one 12V battery.",
+      cn: "INGCO (CDLI12456) 出品的一款紧凑型 12V 锂电电钻。具有 20Nm 扭矩，是一款适用于旋拧和钻孔的多功能工具。套装包含一块 12V 电池。"
     },
-    img: "assets/img/Phone/11.jpg",
+    img: "assets/img/Handheld/11.jpg",
     imgs: [
-      "assets/img/Phone/11.jpg",
-      "assets/img/Phone/11.1.jpg",
-      "assets/img/Phone/11.2.jpg",
-      "assets/img/Phone/11.3.jpg",
-      "assets/img/Phone/11.4.jpg"
+      "assets/img/Handheld/11.jpg",
+      "assets/img/Handheld/11.1.jpg",
+      "assets/img/Handheld/11.2.jpg",
+      "assets/img/Handheld/11.3.jpg",
     ]
   },
   {
     id: 12,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Handheld Construction Tools", cn: "手持式建筑工具" },
     name: {
-      en: "300W USB-C GaN IV Fast Charging Station (8 Ports)",
-      cn: "300W USB-C GaN IV 八口快速充电站"
+      en: "INGCO 20V LI-ION BL IMPACT DRILL 96NM W/2X 4.0AH CHARGER + CASE CIDLI20968",
+      cn: "INGCO 20V 锂电无刷冲击钻 96NM (含2x4.0AH电池, 充电器, 工具箱) CIDLI20968"
     },
     desc: {
-      en: "A powerful 300W GaN IV fast charging station with eight USB ports, including 100W USB-C for laptops. Compatible with MacBook, Dell, Steam Deck, iPhone 16/15/14, Galaxy devices, and more—ideal for home, office, or travel.",
-      cn: "这款 300W GaN IV 快速充电站配备八个 USB 接口，其中包含 100W USB-C，可为笔记本供电。兼容 MacBook、Dell、Steam Deck、iPhone 16/15/14、Galaxy 等设备，是家庭、办公和旅行的理想选择。"
+      en: "A heavy-duty 20V brushless impact drill from INGCO (CIDLI20968). Delivering 96Nm of torque for tough applications. Complete kit includes two 4.0Ah batteries, charger, and a carrying case.",
+      cn: "INGCO (CIDLI20968) 出品的一款重型 20V 无刷冲击钻。可提供 96Nm 的强大扭矩，适用于高强度应用。完整套装包括两块 4.0Ah 电池、充电器和便携箱。"
     },
-    img: "assets/img/Phone/12.jpg",
+    img: "assets/img/Handheld/12.jpg",
     imgs: [
-      "assets/img/Phone/12.jpg",
-      "assets/img/Phone/12.1.jpg",
-      "assets/img/Phone/12.2.jpg",
-      "assets/img/Phone/12.3.jpg",
-      "assets/img/Phone/12.4.jpg"
+      "assets/img/Handheld/12.jpg",
+      "assets/img/Handheld/12.1.jpg",
+      "assets/img/Handheld/12.2.jpg",
     ]
   },
-  {
+{
     id: 13,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
     name: {
-      en: "35W 4-Port USB-C Fast Charger (3-Pack)",
-      cn: "35W 四口 USB-C 快速充电器（三件装）"
+      en: "SL H-SHAPE GLASS DOOR SEAL CLEAR 2.5M",
+      cn: "SL H型透明玻璃门密封条 2.5米"
     },
     desc: {
-      en: "A compact 4-port fast charger featuring dual USB-C and dual USB outputs, supporting PD fast charging for iPhone 17/16/15 series and older models. Designed for travel, home, and multi-device charging.",
-      cn: "这款四口快速充电器配备双 USB-C 和双 USB 接口，支持 iPhone 17/16/15 系列及更多型号的 PD 快充。体积小巧，非常适合旅行、家庭及多设备使用。"
+      en: "A 2.5-meter clear H-shape seal for glass doors. Provides effective weatherproofing and sound insulation while maintaining a clean, transparent look.",
+      cn: "一款 2.5 米长的 H 型透明玻璃门密封条。在保持干净透明外观的同时，提供有效的防风雨和隔音效果。"
     },
-    img: "assets/img/Phone/13.jpg",
+    img: "assets/img/Door/1.jpg",
     imgs: [
-      "assets/img/Phone/13.jpg",
-      "assets/img/Phone/13.1.jpg",
-      "assets/img/Phone/13.2.jpg",
-      "assets/img/Phone/13.3.jpg",
-      "assets/img/Phone/13.4.jpg"
+      "assets/img/Door/1.jpg"
     ]
   },
   {
     id: 14,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
     name: {
-      en: "Bluetooth Wireless Headset with Noise-Cancelling Microphone",
-      cn: "蓝牙无线耳机（带降噪麦克风）"
+      en: "SL 90 DEGREES BATHROOM SEAL 2.5M",
+      cn: "SL 90度浴室密封条 2.5米"
     },
     desc: {
-      en: "A lightweight Bluetooth headset designed for calls, truck drivers, office work, and remote meetings. Features noise-cancelling microphone, long battery life, and a convenient mute button for clear and distraction-free communication.",
-      cn: "这款轻量级蓝牙耳机适用于通话、卡车司机、办公室和远程会议。配备降噪麦克风、长续航电池以及一键静音功能，确保清晰无干扰的沟通体验。"
+      en: "A 2.5-meter 90-degree seal designed for bathroom glass doors. Ensures a watertight seal to prevent leaks and keep your bathroom floor dry.",
+      cn: "一款专为浴室玻璃门设计的 2.5 米 90 度密封条。确保证水密密封，防止泄漏并保持浴室地面干燥。"
     },
-    img: "assets/img/Phone/14.jpg",
+    img: "assets/img/Door/2.jpg",
     imgs: [
-      "assets/img/Phone/14.jpg",
-      "assets/img/Phone/14.1.jpg",
-      "assets/img/Phone/14.2.jpg",
-      "assets/img/Phone/14.3.jpg",
-      "assets/img/Phone/14.4.jpg"
+      "assets/img/Door/2.jpg"
     ]
   },
   {
     id: 15,
-    category: { en: "Phone Accessories", cn: "手机配件" },
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
     name: {
-      en: "Aluminum Desktop Phone Stand (Red)",
-      cn: "铝制桌面手机支架（红色）"
+      en: "SL E-PROFILE WEATHERSTRIP 9X4MM-2X2.5M",
+      cn: "SL E型密封条 9X4毫米-2X2.5米"
     },
     desc: {
-      en: "A sturdy aluminum phone stand designed for hands-free viewing, gaming, and video calls. Compatible with all smartphones and Nintendo Switch. Features anti-slip padding and adjustable viewing angles for maximum comfort.",
-      cn: "这款坚固的铝制手机支架适用于免手持观看、游戏和视频通话，兼容所有智能手机和任天堂 Switch。配有防滑垫和可调节角度，提供舒适稳定的使用体验。"
+      en: "A durable E-profile weatherstrip pack (2x 2.5m). Designed to seal gaps in windows and doors, reducing drafts, noise, and energy loss.",
+      cn: "耐用的 E 型密封条套装（2x 2.5米）。专为密封门窗缝隙而设计，可减少穿堂风、噪音和能量损失。"
     },
-    img: "assets/img/Phone/15.jpg",
+    img: "assets/img/Door/3.jpg",
     imgs: [
-      "assets/img/Phone/15.jpg",
-      "assets/img/Phone/15.1.jpg",
-      "assets/img/Phone/15.2.jpg",
-      "assets/img/Phone/15.3.jpg",
-      "assets/img/Phone/15.4.jpg"
+      "assets/img/Door/3.jpg"
     ]
   },
   {
-    "id": 16,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Ergonomic Portable Laptop Stand (Silver)",
-      "cn": "人体工学便携式笔记本电脑支架（银色）"
+    id: 16,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "ALUMINIUM CASEMENT WINDOW HANDLE",
+      cn: "铝合金平开窗把手"
     },
-    "desc": {
-      "en": "A sturdy, portable, and ergonomic laptop stand for desks. This adjustable riser fits all laptops up to 17.3 inches, improving your posture. Silver finish.",
-      "cn": "一款坚固、便携的人体工学笔记本电脑桌面支架。这款可调节的增高架适用于所有17.3英寸以下的笔记本电脑，改善您的坐姿。银色外观。"
+    desc: {
+      en: "A sleek and durable aluminium handle for casement windows. Offers smooth operation and a modern aesthetic for residential or commercial properties.",
+      cn: "一款时尚耐用的铝合金平开窗把手。操作顺畅，为住宅或商业地产带来现代美感。"
     },
-    "img": "assets/img/Computer/1.jpg",
-    "imgs": [
-      "assets/img/Computer/1.jpg",
-      "assets/img/Computer/1.1.jpg",
-      "assets/img/Computer/1.2.jpg",
-      "assets/img/Computer/1.3.jpg",
-      "assets/img/Computer/1.4.jpg"
+    img: "assets/img/Door/4.jpg",
+    imgs: [
+      "assets/img/Door/4.jpg",
+      "assets/img/Door/4.1.jpg"
     ]
   },
   {
-    "id": 17,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "RGB Laptop Cooling Pad with 6 Fans (Blue)",
-      "cn": "RGB 笔记本电脑散热垫（6风扇，蓝色）"
+    id: 17,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "WINDOW CASEMENT LOCK WITH KEY",
+      cn: "带钥匙平开窗锁"
     },
-    "desc": {
-      "en": "Upgraded laptop cooler for 15.6-17.3 inch laptops. Features 6 quiet fans, 7 adjustable height stands, 10 RGB light modes, and 2 USB ports. Ideal for desk or lap use.",
-      "cn": "升级款笔记本电脑散热器，适用于15.6-17.3英寸笔记本。配备6个静音风扇、7档高度调节、10种RGB灯光模式和2个USB端口。适合桌面或膝上使用。"
+    desc: {
+      en: "A secure casement window lock with key mechanism. Provides enhanced safety and child protection for your home windows.",
+      cn: "一款带钥匙机制的安全平开窗锁。为您的家庭窗户提供增强的安全性和儿童保护。"
     },
-    "img": "assets/img/Computer/2.jpg",
-    "imgs": [
-      "assets/img/Computer/2.jpg",
-      "assets/img/Computer/2.1.jpg",
-      "assets/img/Computer/2.2.jpg",
-      "assets/img/Computer/2.3.jpg"
+    img: "assets/img/Door/5.jpg",
+    imgs: [
+      "assets/img/Door/5.jpg"
     ]
   },
   {
-    "id": 18,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "360° Rotating Ergonomic Laptop Stand (Silver)",
-      "cn": "360° 旋转人体工学笔记本电脑支架（银色）"
+    id: 18,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "SL INSECT SCREEN ROLL IN GREY",
+      cn: "SL 灰色防虫网卷"
     },
-    "desc": {
-      "en": "Stable metal laptop stand with a 360° rotating base. Ergonomic, foldable, and adjustable for height and angle. Supports 10-17 inch notebooks.",
-      "cn": "稳定的金属笔记本电脑支架，配有360°旋转底座。符合人体工学，可折叠，高度和角度均可调节。支持10-17英寸笔记本电脑。"
+    desc: {
+      en: "A roll of high-quality grey insect screen. Perfect for repairing or replacing window and door screens to keep bugs out while allowing airflow.",
+      cn: "一卷优质灰色防虫网。非常适合修理或更换门窗纱网，在保持通风的同时防止昆虫进入。"
     },
-    "img": "assets/img/Computer/3.jpg",
-    "imgs": [
-      "assets/img/Computer/3.jpg"
+    img: "assets/img/Door/6.jpg",
+    imgs: [
+      "assets/img/Door/6.jpg"
     ]
   },
   {
-    "id": 19,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Pro Lap Desk with Wrist Rest & Phone Holder",
-      "cn": "专业膝上桌（带腕托和手机支架）"
+    id: 19,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "SL POLYESTER INSECT SCREEN 1.5MX1.5M",
+      cn: "SL 聚酯防虫网 1.5米X1.5米"
     },
-    "desc": {
-      "en": "A home office pro lap desk in black carbon finish. Features a comfortable wrist rest, integrated mouse pad, and phone holder. Fits laptops up to 15.6 inches.",
-      "cn": "一款专业的家庭办公膝上桌，碳黑色外观。配备舒适的腕托、集成鼠标垫和手机支架。适用于15.6英寸以下的笔记本电脑。"
+    desc: {
+      en: "A durable 1.5m x 1.5m polyester insect screen. Resistant to tearing and weathering, providing long-lasting protection against pests.",
+      cn: "耐用的 1.5米 x 1.5米聚酯防虫网。抗撕裂和耐候，提供持久的防虫保护。"
     },
-    "img": "assets/img/Computer/4.jpg",
-    "imgs": [
-      "assets/img/Computer/4.jpg",
-      "assets/img/Computer/4.1.jpg",
-      "assets/img/Computer/4.2.jpg",
-      "assets/img/Computer/4.3.jpg",
-      "assets/img/Computer/4.4.jpg"
+    img: "assets/img/Door/7.jpg",
+    imgs: [
+      "assets/img/Door/7.jpg",
+      "assets/img/Door/7.1.jpg",
+      "assets/img/Door/7.2.jpg"
     ]
   },
   {
-    "id": 20,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Lightweight Ergonomic Wireless Mouse (530)",
-      "cn": "轻量化人体工学无线鼠标 (530)"
+    id: 20,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "NELON DOOR STOPPER N-DSZ03",
+      cn: "NELON 门吸 N-DSZ03"
     },
-    "desc": {
-      "en": "Model 530 lightweight wireless mouse. Features 2.4GHz USB nano receiver, 1200 DPI optical sensor, and an ergonomic design suitable for both left and right-hand users. Battery included.",
-      "cn": "530 型号轻量级无线鼠标。配备2.4GHz USB纳米接收器，1200 DPI 光学传感器，以及适合左右手用户的人体工学设计。附带电池。"
+    desc: {
+      en: "The NELON N-DSZ03 is a robust door stopper designed to prevent wall damage and hold doors open securely. Suitable for residential and office use.",
+      cn: "NELON N-DSZ03 是一款坚固的门吸，旨在防止墙壁损坏并安全地保持门开启。适合住宅和办公室使用。"
     },
-    "img": "assets/img/Computer/5.jpg",
-    "imgs": [
-      "assets/img/Computer/5.jpg",
-      "assets/img/Computer/5.1.jpg",
-      "assets/img/Computer/5.2.jpg",
-      "assets/img/Computer/5.3.jpg"
+    img: "assets/img/Door/8.jpg",
+    imgs: [
+      "assets/img/Door/8.jpg"
     ]
   },
   {
-    "id": 21,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Bluetooth Silent Mouse with Adjustable DPI",
-      "cn": "蓝牙静音鼠标（DPI可调）"
+    id: 21,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "CHROME CONCEAL HINGES FOR CABINET",
+      cn: "橱柜镀铬暗铰链"
     },
-    "desc": {
-      "en": "A silent Bluetooth mouse with a blue optical sensor and 4 buttons. Features adjustable DPI and supports Microsoft Swift Pair for easy connection with Windows and ChromeOS.",
-      "cn": "一款静音蓝牙鼠标，配备蓝色光学传感器和4个按钮。具有可调节的DPI，并支持Microsoft Swift Pair，可轻松连接Windows和ChromeOS。"
+    desc: {
+      en: "High-quality chrome concealed hinges for cabinets. These hinges offer a clean, seamless look and smooth closing action for kitchen or furniture doors.",
+      cn: "用于橱柜的高品质镀铬暗铰链。这些铰链为厨房或家具门提供干净、无缝的外观和顺畅的关闭动作。"
     },
-    "img": "assets/img/Computer/6.jpg",
-    "imgs": [
-      "assets/img/Computer/6.jpg",
-      "assets/img/Computer/6.1.jpg",
-      "assets/img/Computer/6.2.jpg",
-      "assets/img/Computer/6.3.jpg",
-      "assets/img/Computer/6.4.jpg"
+    img: "assets/img/Door/9.jpg",
+    imgs: [
+      "assets/img/Door/9.jpg"
     ]
   },
   {
-    "id": 22,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Retro Wireless Keyboard & Mouse Combo (Milk-Tea)",
-      "cn": "复古无线键鼠套装（奶茶色）"
+    id: 22,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "NELON S.S HINGES 1.5MM (PAIR)",
+      cn: "NELON 不锈钢铰链 1.5毫米 (一对)"
     },
-    "desc": {
-      "en": "A colorful, retro-design wireless keyboard and mouse combo. Features ergonomic round typewriter keycaps and a reliable 2.4GHz connection. (Milk-Tea Colorful)",
-      "cn": "一款色彩丰富的复古设计无线键盘和鼠标套装。采用符合人体工学的圆形打字机键帽和可靠的2.4GHz连接。（奶茶拼色）"
+    desc: {
+      en: "A pair of 1.5mm stainless steel hinges by NELON. Corrosion-resistant and durable, suitable for various door types.",
+      cn: "一对 NELON 1.5毫米不锈钢铰链。耐腐蚀且耐用，适用于各种门型。"
     },
-    "img": "assets/img/Computer/7.jpg",
-    "imgs": [
-      "assets/img/Computer/7.jpg",
-      "assets/img/Computer/7.1.jpg",
-      "assets/img/Computer/7.2.jpg",
-      "assets/img/Computer/7.3.jpg",
-      "assets/img/Computer/7.4.jpg"
+    img: "assets/img/Door/10.jpg",
+    imgs: [
+      "assets/img/Door/10.jpg"
     ]
   },
   {
-    "id": 24,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Wireless Mechanical Keyboard (Graphite)",
-      "cn": "无线机械键盘（石墨灰）"
+    id: 24,
+    category: { en: "Door & Window Hardware", cn: "门窗五金" },
+    name: {
+      en: "HORME CHROME PLATED DOOR PULL",
+      cn: "HORME 镀铬门拉手"
     },
-    "desc": {
-      "en": "A high-performance wireless mechanical keyboard with tactile quiet switches and backlit keys. Connects via Bluetooth or USB-C. Compatible with macOS, Windows, Linux, iOS, and Android. (Graphite)",
-      "cn": "一款高性能无线机械键盘，配备静音触感轴体和背光按键。可通过蓝牙或USB-C连接。兼容 macOS、Windows、Linux、iOS 和 Android。（石墨灰）"
+    desc: {
+      en: "A stylish chrome-plated door pull handle from HORME. Its ergonomic design and shiny finish add a touch of elegance to any door.",
+      cn: "HORME 出品的一款时尚镀铬门拉手。其符合人体工程学的设计和光泽的表面为任何门增添了一丝优雅。"
     },
-    "img": "assets/img/Computer/8.jpg",
-    "imgs": [
-      "assets/img/Computer/8.jpg",
-      "assets/img/Computer/8.1.jpg",
-      "assets/img/Computer/8.2.jpg",
-      "assets/img/Computer/8.3.jpg"
+    img: "assets/img/Door/11.jpg",
+    imgs: [
+      "assets/img/Door/11.jpg"
     ]
   },
-  {
-    "id": 25,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Retro Wireless Keyboard & Mouse Combo (Green)",
-      "cn": "复古无线键鼠套装（绿色）"
-    },
-    "desc": {
-      "en": "A full-sized wireless office keyboard and mouse combo with a colorful retro typewriter key design. Ensures a dropout-free 2.4GHz connection. (Green-Colorful)",
-      "cn": "一款全尺寸无线办公键盘和鼠标套装，采用多彩的复古打字机按键设计。确保2.4GHz连接稳定无延迟。（绿色拼色）"
-    },
-    "img": "assets/img/Computer/9.jpg",
-    "imgs": [
-      "assets/img/Computer/9.jpg",
-      "assets/img/Computer/9.1.jpg",
-      "assets/img/Computer/9.2.jpg",
-      "assets/img/Computer/9.3.jpg"
-    ]
-  },
-  {
-    "id": 26,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Ultra Slim Wireless Keyboard & Mouse Combo (Silver)",
-      "cn": "超薄无线键鼠套装（银白色）"
-    },
-    "desc": {
-      "en": "An ultra-slim, silent 2.4G wireless keyboard and mouse set. Features a compact scissor-switch keyboard with cover and a 2400 DPI mouse. Batteries included. (Silver White)",
-      "cn": "一套超薄静音的2.4G无线键盘和鼠标。配备带保护盖的紧凑型剪刀脚键盘和2400 DPI鼠标。附带电池。（银白色）"
-    },
-    "img": "assets/img/Computer/10.jpg",
-    "imgs": [
-      "assets/img/Computer/10.jpg",
-      "assets/img/Computer/10.1.jpg",
-      "assets/img/Computer/10.2.jpg",
-      "assets/img/Computer/10.3.jpg"
-    ]
-  },
-  {
-    "id": 28,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Apex 3 TKL RGB Gaming Keyboard (Black)",
-      "cn": "Apex 3 TKL RGB 游戏键盘（黑色）"
-    },
-    "desc": {
-      "en": "A compact Tenkeyless (TKL) gaming keyboard. Features 8-zone RGB, IP32 water/dust resistance, whisper-quiet gaming switches, and anti-ghosting. (Black)",
-      "cn": "一款紧凑型 (TKL) 游戏键盘。具有8区RGB、IP32防水防尘、静音游戏开关和全键无冲功能。（黑色）"
-    },
-    "img": "assets/img/Computer/11.jpg",
-    "imgs": [
-      "assets/img/Computer/11.jpg",
-      "assets/img/Computer/11.1.jpg",
-      "assets/img/Computer/11.2.jpg",
-      "assets/img/Computer/11.3.jpg"
-    ]
-  },
-  {
-    "id": 29,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Tri-Mode Wireless Gaming Keyboard (Green)",
-      "cn": "三模无线游戏键盘（绿色）"
-    },
-    "desc": {
-      "en": "A tri-mode (Bluetooth/2.4GHz/USB-C) wireless gaming keyboard with number pad. Features custom creamy switches, RGB backlighting, and a programmable media knob. (Green)",
-      "cn": "一款三模（蓝牙/2.4GHz/USB-C）无线游戏键盘，带数字键盘。配备定制奶油轴、RGB背光和可编程媒体旋钮。（绿色）"
-    },
-    "img": "assets/img/Computer/12.jpg",
-    "imgs": [
-      "assets/img/Computer/12.jpg",
-      "assets/img/Computer/12.1.jpg",
-      "assets/img/Computer/12.2.jpg",
-      "assets/img/Computer/12.3.jpg"
-    ]
-  },
-  {
-    "id": 30,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Foldable On-Ear Bluetooth Headphones (35Hr Playtime)",
-      "cn": "可折叠贴耳式蓝牙耳机（35小时播放）"
-    },
-    "desc": {
-      "en": "On-ear wireless Bluetooth headphones with a built-in microphone. Offers 35 hours of playtime and a foldable, collapsible design perfect for travel. (Black)",
-      "cn": "贴耳式无线蓝牙耳机，内置麦克风。提供35小时播放时间，采用可折叠设计，非常适合旅行。（黑色）"
-    },
-    "img": "assets/img/Computer/13.jpg",
-    "imgs": [
-      "assets/img/Computer/13.jpg",
-      "assets/img/Computer/13.1.jpg",
-      "assets/img/Computer/13.2.jpg",
-      "assets/img/Computer/13.3.jpg"
-    ]
-  },
-  {
-    "id": 31,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Stereo USB Headset with Microphone (Xtream H5U)",
-      "cn": "立体声 USB 耳机麦克风 (Xtream H5U)"
-    },
-    "desc": {
-      "en": "The Xtream H5U is a stereo USB multimedia headset with a built-in microphone. Ideal for PC calls, gaming, and online learning.",
-      "cn": "Xtream H5U 是一款带内置麦克风的立体声USB多媒体耳机。是PC通话、游戏和在线学习的理想选择。"
-    },
-    "img": "assets/img/Computer/14.jpg",
-    "imgs": [
-      "assets/img/Computer/14.jpg",
-      "assets/img/Computer/14.1.jpg",
-      "assets/img/Computer/14.2.jpg",
-      "assets/img/Computer/14.3.jpg",
-      "assets/img/Computer/14.4.jpg"
-    ]
-  },
-  {
-    "id": 32,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Active Noise Cancelling Bluetooth Headphones",
-      "cn": "主动降噪蓝牙耳机"
-    },
-    "desc": {
-      "en": "Wireless Bluetooth headphones featuring Active Noise Cancellation (ANC) and a built-in microphone for clear calls. Perfect for immersive audio and focus.",
-      "cn": "具有主动降噪（ANC）功能的无线蓝牙耳机，内置麦克风可确保通话清晰。非常适合沉浸式音频体验和专注工作。"
-    },
-    "img": "assets/img/Computer/15.jpg",
-    "imgs": [
-      "assets/img/Computer/15.jpg",
-      "assets/img/Computer/15.1.jpg",
-      "assets/img/Computer/15.2.jpg",
-      "assets/img/Computer/15.3.jpg"
-    ]
-  },
-  {
-    "id": 33,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Bluetooth 5.0+EDR Headphones with Mic",
-      "cn": "蓝牙 5.0+EDR 耳机（带麦克风）"
-    },
-    "desc": {
-      "en": "Wireless headphones featuring Bluetooth 5.0 + EDR for a stable connection and enhanced data rate. Includes a built-in microphone for hands-free calls.",
-      "cn": "采用蓝牙5.0 + EDR 技术的无线耳机，连接稳定，数据传输速率更快。内置麦克风，支持免提通话。"
-    },
-    "img": "assets/img/Computer/16.jpg",
-    "imgs": [
-      "assets/img/Computer/16.jpg",
-      "assets/img/Computer/16.1.jpg",
-      "assets/img/Computer/16.2.jpg",
-      "assets/img/Computer/16.3.jpg"
-    ]
-  },
-  {
-    "id": 34,
-    "category": { "en": "Computer Accessories", "cn": "电脑配件" },
-    "name": {
-      "en": "Evolve2 40 Noise Cancelling PC Headset (USB-A)",
-      "cn": "Evolve2 40 降噪电脑耳机 (USB-A)"
-    },
-    "desc": {
-      "en": "A Microsoft Teams certified stereo PC headset (USB-A). Features noise cancellation and advanced 3-microphone technology for clear calls in open offices. (Black)",
-      "cn": "一款经Microsoft Teams认证的立体声电脑耳机 (USB-A)。具有降噪功能和先进的3麦克风技术，可在开放式办公室中实现清晰通话。（黑色）"
-    },
-    "img": "assets/img/Computer/17.jpg",
-    "imgs": [
-      "assets/img/Computer/17.jpg",
-      "assets/img/Computer/17.1.jpg",
-      "assets/img/Computer/17.2.jpg",
-      "assets/img/Computer/17.3.jpg"
-    ]
-  },
-{
-    "id": 35,
-    "category": { "en": "Computer Hardware", "cn": "电脑硬件" },
-    "name": {
-      "en": "CORSAIR Vengeance LPX DDR4 RAM 32GB (2x16GB) 3200MHz",
-      "cn": "美商海盗船 Vengeance LPX DDR4 32GB (2x16GB) 3200MHz 内存"
-    },
-    "desc": {
-      "en": "A 32GB (2x16GB) kit of CORSAIR Vengeance LPX DDR4 desktop memory. Rated for 3200MHz with CL16 timings, optimized for both Intel and AMD motherboards. (Black)",
-      "cn": "美商海盗船 Vengeance LPX DDR4 台式机内存套装，容量 32GB (2x16GB)。频率 3200MHz，CL16 时序，专为 Intel 和 AMD 主板优化。（黑色）"
-    },
-    "img": "assets/img/Hardware/1.jpg",
-    "imgs": [
-      "assets/img/Hardware/1.jpg",
-      "assets/img/Hardware/1.1.jpg",
-      "assets/img/Hardware/1.2.jpg",
-      "assets/img/Hardware/1.3.jpg"
-    ]
-  },
-  {
-    "id": 36,
-    "category": { "en": "Computer Hardware", "cn": "电脑硬件" },
-    "name": {
-      "en": "Crucial DDR5 Laptop RAM 32GB Kit (2x16GB) 5600MHz SODIMM",
-      "cn": "英睿达 DDR5 笔记本内存 32GB (2x16GB) 5600MHz SODIMM"
-    },
-    "desc": {
-      "en": "A Crucial 32GB (2x16GB) DDR5 laptop memory (SODIMM) kit. Rated for 5600MHz, it's compatible with 13th Gen Intel Core and AMD Ryzen 7000 series laptops.",
-      "cn": "英睿达 32GB (2x16GB) DDR5 笔记本内存 (SODIMM) 套装。频率高达 5600MHz，兼容第13代 Intel 酷睿和 AMD 锐龙 7000 系列笔记本电脑。"
-    },
-    "img": "assets/img/Hardware/2.jpg",
-    "imgs": [
-      "assets/img/Hardware/2.jpg",
-      "assets/img/Hardware/2.1.jpg",
-      "assets/img/Hardware/2.2.jpg",
-      "assets/img/Hardware/2.3.jpg"
-    ]
-  },
-  {
-    "id": 37,
-    "category": { "en": "Computer Hardware", "cn": "电脑硬件" },
-    "name": {
-      "en": "GIGASTONE DDR4 Laptop RAM 32GB (2x16GB) 3200MHz SODIMM",
-      "cn": "GIGASTONE DDR4 笔记本内存 32GB (2x16GB) 3200MHz SODIMM"
-    },
-    "desc": {
-      "en": "A high-performance 32GB (2x16GB) DDR4 3200MHz SODIMM kit from GIGASTONE. This 1.2V, CL22 notebook memory is also compatible with 2933MHz and 2666MHz systems.",
-      "cn": "来自 GIGASTONE 的高性能 32GB (2x16GB) DDR4 3200MHz SODIMM 套装。这款 1.2V、CL22 的笔记本内存还兼容 2933MHz 和 2666MHz 系统。"
-    },
-    "img": "assets/img/Hardware/3.jpg",
-    "imgs": [
-      "assets/img/Hardware/3.jpg"
-    ]
-  },
-  {
-    "id": 38,
-    "category": { "en": "Computer Hardware", "cn": "电脑硬件" },
-    "name": {
-      "en": "Timetec 8GB DDR3L/DDR3 1600MHz Laptop RAM (SODIMM)",
-      "cn": "Timetec 8GB DDR3L/DDR3 1600MHz 笔记本内存 (SODIMM)"
-    },
-    "desc": {
-      "en": "An 8GB Timetec DDR3L/DDR3 1600MHz (PC3L-12800S) SODIMM module. This dual-voltage (1.35V/1.5V) laptop memory is perfect for upgrading older notebooks.",
-      "cn": "一根 8GB Timetec DDR3L/DDR3 1600MHz (PC3L-12800S) SODIMM 内存条。这款双电压 (1.35V/1.5V) 笔记本内存是升级旧款笔记本电脑的理想选择。"
-    },
-    "img": "assets/img/Hardware/4.jpg",
-    "imgs": [
-      "assets/img/Hardware/4.jpg",
-      "assets/img/Hardware/4.1.jpg",
-      "assets/img/Hardware/4.2.jpg",
-      "assets/img/Hardware/4.3.jpg"
-    ]
-  },
-  {
-    "id": 39,
-    "category": { "en": "Computer Hardware", "cn": "电脑硬件" },
-    "name": {
-      "en": "Crucial Pro DDR5 Desktop RAM 32GB Kit (2x16GB) 5600MHz UDIMM",
-      "cn": "英睿达 Pro DDR5 台式机内存 32GB (2x16GB) 5600MHz UDIMM"
-    },
-    "desc": {
-      "en": "A Crucial Pro 32GB (2x16GB) DDR5 desktop memory (UDIMM) kit. Rated for 5600MHz, it is optimized for 13th Gen Intel Core and AMD Ryzen 7000 series CPUs.",
-      "cn": "英睿达 Pro 32GB (2x16GB) DDR5 台式机内存 (UDIMM) 套装。频率高达 5600MHz，专为第13代 Intel 酷睿和 AMD 锐龙 7000 系列 CPU 优化。"
-    },
-    "img": "assets/img/Hardware/5.jpg",
-    "imgs": [
-      "assets/img/Hardware/5.jpg",
-      "assets/img/Hardware/5.1.jpg",
-      "assets/img/Hardware/5.2.jpg",
-      "assets/img/Hardware/5.3.jpg",
-      "assets/img/Hardware/5.4.jpg"
-    ]
-  },
-  {
-    "id": 40,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Echo Spot - Smart Alarm Clock with Alexa (Black)",
-      "cn": "Echo Spot - 带 Alexa 的智能闹钟（黑色）"
-    },
-    "desc": {
-      "en": "A compact smart alarm clock with Alexa, perfect for nightstands, offices, and kitchens. Features a screen for video calls and information at a glance. (Black)",
-      "cn": "一款带 Alexa 的紧凑型智能闹钟，非常适合床头柜、办公室和厨房。配有屏幕，可进行视频通话并一目了然地显示信息。（黑色）"
-    },
-    "img": "assets/img/Home/1.jpg",
-    "imgs": [
-      "assets/img/Home/1.jpg",
-      "assets/img/Home/1.1.jpg",
-      "assets/img/Home/1.2.jpg",
-      "assets/img/Home/1.3.jpg"
-    ]
-  },
-  {
-    "id": 41,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Echo Dot Max - Smart Speaker with Smart Home Hub (Glacier White)",
-      "cn": "Echo Dot Max - 带智能家居中心的智能音箱（冰川白）"
-    },
-    "desc": {
-      "en": "An Alexa smart speaker featuring room-filling sound and a built-in smart home hub. Control your smart devices and enjoy music. (Glacier White)",
-      "cn": "一款 Alexa 智能音箱，具有充满房间的音效和内置的智能家居中心。控制您的智能设备并享受音乐。（冰川白）"
-    },
-    "img": "assets/img/Home/2.jpg",
-    "imgs": [
-      "assets/img/Home/2.jpg",
-      "assets/img/Home/2.1.jpg",
-      "assets/img/Home/2.2.jpg",
-      "assets/img/Home/2.3.jpg"
-    ]
-  },
-  {
-    "id": 42,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "4L Smart Cool Mist Humidifier (App/Voice Control)",
-      "cn": "4L 智能冷雾加湿器（App/语音控制）"
-    },
-    "desc": {
-      "en": "A 4L top-fill smart humidifier for large rooms. Features ultra-quiet (28 dB) operation, 36-hour runtime, nightlight, and control via Touch, App, or Voice. (Black)",
-      "cn": "一款适用于大房间的 4L 上注水式智能加湿器。具有超静音（28 dB）运行、36小时续航、夜灯功能，并支持触摸、App 或语音控制。（黑色）"
-    },
-    "img": "assets/img/Home/3.jpg",
-    "imgs": [
-      "assets/img/Home/3.jpg",
-      "assets/img/Home/3.1.jpg",
-      "assets/img/Home/3.2.jpg",
-      "assets/img/Home/3.3.jpg",
-      "assets/img/Home/3.4.jpg"
-    ]
-  },
-  {
-    "id": 43,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "WiFi Smart Temperature & Humidity Sensor (3-Pack)",
-      "cn": "WiFi 智能温湿度传感器（3件装）"
-    },
-    "desc": {
-      "en": "A 3-pack of WiFi smart temperature/humidity sensors. Get remote App/Email alerts, 2 years of data export, and 2-year battery life. No subscription required. Ideal for RVs, greenhouses, and homes.",
-      "cn": "一套3件装的 WiFi 智能温湿度传感器。提供远程 App/电子邮件警报、2年数据导出和2年电池寿命。无需订阅。非常适合房车、温室和家庭使用。"
-    },
-    "img": "assets/img/Home/4.jpg",
-    "imgs": [
-      "assets/img/Home/4.jpg",
-      "assets/img/Home/4.1.jpg",
-      "assets/img/Home/4.2.jpg",
-      "assets/img/Home/4.3.jpg"
-    ]
-  },
-  {
-    "id": 44,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Google TV 4K UHD Smart Projector with Dolby Sound",
-      "cn": "Google TV 4K 超高清智能投影仪（杜比音效）"
-    },
-    "desc": {
-      "en": "An official Google TV 4K UHD smart projector by HAPPRUN. Features Dolby Sound, Wi-Fi, Bluetooth, and built-in streaming apps. Compatible with game consoles and smartphones for indoor/outdoor use.",
-      "cn": "一款 HAPPRUN 出品的官方 Google TV 4K 超高清智能投影仪。具有杜比音效、Wi-Fi、蓝牙和内置流媒体应用。兼容游戏机和智能手机，适合室内外使用。"
-    },
-    "img": "assets/img/Home/5.jpg",
-    "imgs": [
-      "assets/img/Home/5.jpg",
-      "assets/img/Home/5.1.jpg",
-      "assets/img/Home/5.2.jpg",
-      "assets/img/Home/5.3.jpg",
-      "assets/img/Home/5.4.jpg"
-    ]
-  },
-  {
-    "id": 45,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Rechargeable Motion Sensor Under Cabinet Lights (2-Pack)",
-      "cn": "可充电式运动感应橱柜灯（2件装）"
-    },
-    "desc": {
-      "en": "A 2-pack of 14.7-inch rechargeable, wireless under-cabinet lights. Features motion sensors, 5 dimmable levels, and a magnetic base. Perfect for kitchens, closets, stairs, and hallways.",
-      "cn": "一套2件装的14.7英寸可充电无线橱柜灯。具有运动传感器、5级调光和磁吸底座。非常适合厨房、衣柜、楼梯和走廊。"
-    },
-    "img": "assets/img/Home/6.jpg",
-    "imgs": [
-      "assets/img/Home/6.jpg",
-      "assets/img/Home/6.1.jpg",
-      "assets/img/Home/6.2.jpg",
-      "assets/img/Home/6.3.jpg"
-    ]
-  },
-  {
-    "id": 46,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Google Nest Smart Thermostat (Snow)",
-      "cn": "Google Nest 智能恒温器（雪白色）"
-    },
-    "desc": {
-      "en": "The Google Nest Thermostat, a programmable smart WiFi thermostat for your home. Helps you save energy and control your home's temperature from anywhere. (Snow)",
-      "cn": "Google Nest 恒温器，一款适用于您家庭的可编程智能 WiFi 恒温器。帮您节省能源，并可随时随地控制家中温度。（雪白色）"
-    },
-    "img": "assets/img/Home/7.jpg",
-    "imgs": [
-      "assets/img/Home/7.jpg",
-      "assets/img/Home/7.1.jpg",
-      "assets/img/Home/7.2.jpg",
-      "assets/img/Home/7.3.jpg"
-    ]
-  },
-  {
-    "id": 47,
-    "category": { "en": "Smart Home Accessories", "cn": "智能家居配件" },
-    "name": {
-      "en": "Enhanced Smart Thermostat (Works with Siri, Alexa, Google)",
-      "cn": "增强型智能恒温器（兼容 Siri、Alexa、Google）"
-    },
-    "desc": {
-      "en": "An Energy Star certified enhanced smart thermostat. This programmable WiFi thermostat works with Siri, Alexa, and Google Assistant for easy smart home integration and energy savings.",
-      "cn": "一款获得能源之星认证的增强型智能恒温器。这款可编程 WiFi 恒温器兼容 Siri、Alexa 和 Google 助手，可轻松集成到智能家居并节省能源。"
-    },
-    "img": "assets/img/Home/8.jpg",
-    "imgs": [
-      "assets/img/Home/8.jpg",
-      "assets/img/Home/8.1.jpg",
-      "assets/img/Home/8.2.jpg",
-      "assets/img/Home/8.3.jpg"
-    ]
-  }
 ]

@@ -9,7 +9,7 @@ function setLanguage(lang) {
 
   // Lấy đối tượng văn bản dựa trên ngôn ngữ
   // Đảm bảo LANG_CN và LANG_EN đã được tải trước file này
-  const text = lang === "en" ? LANG_EN : LANG_CN;
+  const text = lang === "cn" ? LANG_CN : LANG_EN;
 
   // ===================== CẬP NHẬT TẤT CẢ VĂN BẢN TĨNH =====================
   
